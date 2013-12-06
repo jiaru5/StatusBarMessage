@@ -7,6 +7,7 @@
 //
 
 #import "RDemoViewController.h"
+#import "StatusBarMessageMaster.h"
 
 @interface RDemoViewController ()
 
@@ -35,4 +36,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)showMessageWithRed:(id)sender {
+    [[StatusBarMessageMaster getInstance] showNotice:self.messageTextField.text backgroundColor:[UIColor redColor]];
+}
+
+- (IBAction)showMessageWithOrange:(id)sender {
+    [[StatusBarMessageMaster getInstance] showNotice:self.messageTextField.text backgroundColor:[UIColor orangeColor]];
+}
 @end

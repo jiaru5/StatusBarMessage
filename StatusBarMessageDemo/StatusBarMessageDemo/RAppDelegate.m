@@ -7,6 +7,7 @@
 //
 
 #import "RAppDelegate.h"
+#import "RDemoViewController.h"
 
 @implementation RAppDelegate
 
@@ -15,6 +16,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    RDemoViewController *demoViewController = [[RDemoViewController alloc] init];
+    self.window.rootViewController = demoViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }

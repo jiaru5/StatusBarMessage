@@ -21,6 +21,7 @@
 		C1C787461851700D008EDC65 /* StatusBarMessageDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C787451851700D008EDC65 /* StatusBarMessageDemoTests.m */; };
 		C1C787521851705F008EDC65 /* RDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C787501851705F008EDC65 /* RDemoViewController.m */; };
 		C1C787531851705F008EDC65 /* RDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1C787511851705F008EDC65 /* RDemoViewController.xib */; };
+		C1C7875F18517683008EDC65 /* StatusBarMessageMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C7875E18517683008EDC65 /* StatusBarMessageMaster.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		C1C7874F1851705F008EDC65 /* RDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDemoViewController.h; sourceTree = "<group>"; };
 		C1C787501851705F008EDC65 /* RDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDemoViewController.m; sourceTree = "<group>"; };
 		C1C787511851705F008EDC65 /* RDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDemoViewController.xib; sourceTree = "<group>"; };
+		C1C7875D18517683008EDC65 /* StatusBarMessageMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusBarMessageMaster.h; sourceTree = "<group>"; };
+		C1C7875E18517683008EDC65 /* StatusBarMessageMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusBarMessageMaster.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		C1C787261851700D008EDC65 /* StatusBarMessageDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C1C7875C18517683008EDC65 /* StatusBarMessageMaster */,
 				C1C7872F1851700D008EDC65 /* RAppDelegate.h */,
 				C1C787301851700D008EDC65 /* RAppDelegate.m */,
 				C1C787321851700D008EDC65 /* Images.xcassets */,
@@ -150,6 +154,15 @@
 				C1C787421851700D008EDC65 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1C7875C18517683008EDC65 /* StatusBarMessageMaster */ = {
+			isa = PBXGroup;
+			children = (
+				C1C7875D18517683008EDC65 /* StatusBarMessageMaster.h */,
+				C1C7875E18517683008EDC65 /* StatusBarMessageMaster.m */,
+			);
+			path = StatusBarMessageMaster;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1C787521851705F008EDC65 /* RDemoViewController.m in Sources */,
+				C1C7875F18517683008EDC65 /* StatusBarMessageMaster.m in Sources */,
 				C1C7872D1851700D008EDC65 /* main.m in Sources */,
 				C1C787311851700D008EDC65 /* RAppDelegate.m in Sources */,
 			);
@@ -452,6 +466,7 @@
 				C1C7874B1851700D008EDC65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1C7874C1851700D008EDC65 /* Build configuration list for PBXNativeTarget "StatusBarMessageDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +475,7 @@
 				C1C7874E1851700D008EDC65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

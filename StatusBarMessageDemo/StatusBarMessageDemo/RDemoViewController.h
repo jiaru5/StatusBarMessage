@@ -10,4 +10,9 @@
 
 @interface RDemoViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *messageTextField;
+
+- (IBAction)showMessageWithRed:(id)sender;
+- (IBAction)showMessageWithOrange:(id)sender;
+
 @end
